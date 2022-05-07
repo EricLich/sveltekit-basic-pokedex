@@ -9,7 +9,7 @@ let noResults: boolean;
 
 function filterPokemon(e: any){
     const { value } = e.target;    
-    filtered = $pokemon.filter((poke: PokemonType, index) => poke?.name.includes(value));
+    filtered = $pokemon.filter((poke: PokemonType, index) => poke?.name.includes(value.toLowerCase()));
     noResults = filtered && filtered.length < 1 ? true : false
 }
 
