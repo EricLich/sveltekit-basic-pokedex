@@ -2,7 +2,6 @@
 import type { PokemonType } from "src/types";
 
 export let pokemon: PokemonType;
-console.log(pokemon)
 </script>
 
 <a href={`/pokemon/${pokemon?.id}`} class="hover:scale-105 flex-grow duration-300 overflow-hidden decoration-0 w-full flex flex-col justify-center items-center mb-5 border rounded-xl shadow-sm md:h-[200px] md:w-[150px] md:justify-between">
